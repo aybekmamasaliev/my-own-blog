@@ -8,6 +8,7 @@ const Header =()=>{
                 <li><a href="/">Main</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contacts">Contacts</a></li>
+                <li><a href="/catalog">Catalog</a></li>
             </ul>
         </div>
     );
