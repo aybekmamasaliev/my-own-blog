@@ -7,22 +7,28 @@ import Contacts from './pages/Contacts/Contacts';
 import Header from './components/Header/Header';
 import Notfound from './pages/Notfound/Notfound';
 import Catalog from './pages/Catalog/Catalog';
+import Iphones from './pages/Catalog/Iphones/Iphones';
+import Mackbook from './pages/Catalog/Mackbook/Mackbook';
+import Product from "./pages/product/Product";
+
 
 
 function App() {
   return (
     <>
-      <Header/>
+    
       <BrowserRouter>
+      <Header/>
         <Routes>
-          <Route path="/" element={<Main userName="aibek"/>} />
+          <Route path="/" element={<Main/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contacts" element={<Contacts />} />
             <Route path="/catalog" element={<Catalog/>}>
-              <Route path ="/iphone" element={<Iphones/>}/>
-              <Route path ="/mackbook" element={<Mackbooks/>}/>
+              <Route path ="iphone" element={<Iphones/>}/>
+              <Route path ="macBook" element={<Mackbook/>}/>
             </Route>
-          <Route path="*" element={<Notfound/>} />
+            <Route path='/product/:name' element={<Product/>}/>
+          <Route path="*" element={<Notfound/>} />   
         </Routes>
       </BrowserRouter>
     </>
