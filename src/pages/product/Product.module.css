@@ -7,3 +7,20 @@
 .img{
     width: 100%;
 }
+
+.container{
+    width:750px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin: 0 auto;
+}
+
+.container img{
+    width: 400px;
+    height: 450px;
+}
+
+.info{
+    margin-top: 50px;
+}

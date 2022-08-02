@@ -3,7 +3,7 @@ import React from "react";
 const Header = (props) => {
   return (
     <>
-      <div className="w3-content" style={{ maxWidth: 1400 }}>
+      <div className="w3-content" style={{ maxWidth: "1400px" }}>
         <header className="w3-container w3-center w3-padding-32">
           <h1>
             <b>{props.title}</b>
